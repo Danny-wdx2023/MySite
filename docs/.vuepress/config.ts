@@ -48,13 +48,10 @@ export default defineUserConfig({
     profile: {
       name: "Danny.W",
       description: "技术迷",
-      location: "上海",
+      location: "中国 上海",
       organization: "南洋模范初级中学",
+      circle: false,
     },
-    social: [
-      { icon: "github", link: "https://github.com/Danny-wdx2023" },
-      { icon: "qq", link: "https://qm.qq.com/cgi-bin/qm/qr?uin=3897260170" },
-    ],
 
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
     // hostname: 'https://your_site_url',
@@ -181,17 +178,19 @@ export default defineUserConfig({
      * 评论 comments
      * @see https://theme-plume.vuejs.press/guide/features/comments/
      */
-    // comment: {
-    //   provider: '', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-    //   comment: true,
-    //   repo: '',
-    //   repoId: '',
-    //   category: '',
-    //   categoryId: '',
-    //   mapping: 'pathname',
-    //   reactionsEnabled: true,
-    //   inputPosition: 'top',
-    // },
+    comment: {
+      provider: "Giscus",
+      comment: true,
+      repo: "danny-wdx2023/mysite",
+      repoId: "R_kgDOPiIqJA",
+      category: "Announcements",
+      categoryId: "DIC_kwDOPiIqJM4CudM0",
+      mapping: "pathname",
+      strict: false,
+      reactionsEnabled: true,
+      inputPosition: "top",
+      lazyLoading: true,
+    },
 
     /**
      * 资源链接替换
@@ -203,6 +202,10 @@ export default defineUserConfig({
      * 加密功能
      * @see https://theme-plume.vuejs.press/guide/features/encryption/
      */
-    // encrypt: {},
+    encrypt: {
+      rules: {
+        "/ai": "nymcwddxzl" // 你又冒充伟大的先知了
+      }
+    },
   }),
 });

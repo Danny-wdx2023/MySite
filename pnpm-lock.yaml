@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@giscus/vue':
-        specifier: ^3.1.1
-        version: 3.1.1(vue@3.5.18(typescript@5.9.2))
     devDependencies:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.24
@@ -310,11 +306,6 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
-
-  '@giscus/vue@3.1.1':
-    resolution: {integrity: sha512-xgsc93MibRQ0d1glBxN1BrEREHTIf3BPYs/3R+UZHNqawFFoWBV6iJ7uVCXMqoEKZdE2c78B3aKt5gfGqo8I5A==}
-    peerDependencies:
-      vue: '>=3.2.0'
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -2436,11 +2427,6 @@ snapshots:
 
   '@esbuild/win32-x64@0.25.9':
     optional: true
-
-  '@giscus/vue@3.1.1(vue@3.5.18(typescript@5.9.2))':
-    dependencies:
-      giscus: 1.6.0
-      vue: 3.5.18(typescript@5.9.2)
 
   '@iconify/types@2.0.0': {}
 

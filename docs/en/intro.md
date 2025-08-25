@@ -1,21 +1,21 @@
 ---
-title: 自我介绍
-createTime: 2025/08/21 10:17:20
-permalink: /article/intro/
+title: Self-introduction
+createTime: 2025/08/22 11:12:47
+permalink: /en/article/6rqsja8h/
 sticky: 9
 ---
 
-Hi 我是 Danny.W 很高兴认识你~ :eyes:
+Hi, I am Danny.W. Nice to meet you. :eyes:
 
 :::card
 ## Danny.W
-- 性别：男
-- 出生年份：2012年
-- 星座：摩座
-- 标签：<Badge text="技术迷" /><Badge text="英语达人" />
+- Sex：Male
+- Born in：2012
+- Constellation: Capricornus
+- Tag：<Badge text="Tech nut" /><Badge text="English talent" />
 :::
 
-## 技术栈
+## Tech Stack
 
 <Icon name="skill-icons:vite-light" size="2em" />
 <Icon name="skill-icons:vscode-light" size="2em" />
@@ -35,21 +35,20 @@ Hi 我是 Danny.W 很高兴认识你~ :eyes:
 <Icon name="skill-icons:markdown-light" size="2em" />
 <Icon name="skill-icons:arduino" size="2em" />
 
-## 未来规划
-- [ ] 主力关注AI与机器人方面内容的传播
-- [ ] 关注前沿技术
-- [ ] 将优质文章在思否&掘金同步
+## Plan
+- [ ] Focus on the spread of knowledge in terms of AI & Robot
+- [ ] Focus on state-of-the-art tech
+- [ ] Sync the good articles in SegmentFault & Juejin
 
-## 关注我
+## Follow me
 
-除了博客，诸位也可以以以下方式与我联系/ 关注我的动态：
+Besides the blog, you can follow me in the methods below:
 - [QQ](https://qm.qq.com/cgi-bin/qm/qr?uin=3897260170)
 - [Email](mailto://Danny_wdx2023@aliyun.com)
 - [Github](https://github.com/Danny-wdx2023)
-- [掘金](https://juejin.cn/user/1563945396876169)
-- [思否](https://segmentfault.com/u/danny_w)
+- [Juejin](https://juejin.cn/user/1563945396876169)
+- [SegmentFault](https://segmentfault.com/u/danny_w)
 
 --- 
 
-我将在此记录我的学习笔记和我的漫谈随想；愿他成为我的一个港湾，成为我们大家的一个社区，也愿大家成为我成长的见证者！
-
+I am recording my notes & thoughts here; wish it'll be a place where I can rest and a community of all my followers, and also wish everyone having read here will be a witness of my growth~

@@ -10,20 +10,22 @@
  * 特别的，请不要在两个配置文件中重复配置相同的项，当前文件的配置项会覆盖 `.vuepress/config.ts` 文件中的配置
  */
 
-import { defineThemeConfig } from 'vuepress-theme-plume'
-import { enNavbar, zhNavbar } from './navbar'
-import { enNotes, zhNotes } from './notes'
+import { defineThemeConfig } from "vuepress-theme-plume";
+import { enNavbar, zhNavbar } from "./navbar";
+import { enNotes, zhNotes } from "./notes";
 
 /**
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: 'https://theme-plume.vuejs.press/plume.png',
+  logo: "https://theme-plume.vuejs.press/plume.png",
 
-  appearance: true,  // 配置 深色模式
+  appearance: true, // 配置 深色模式
 
   social: [
-    { icon: 'github', link: '/' },
+    { icon: "github", link: "https://github.com/Danny-wdx2023" },
+    { icon: "qq", link: "https://qm.qq.com/cgi-bin/qm/qr?uin=3897260170" },
+    { icon: "juejin", link: "https://juejin.cn/user/1563945396876169" },
   ],
   // navbarSocialInclude: ['github'], // 允许显示在导航栏的 social 社交链接
   // aside: true, // 页内侧边栏， 默认显示在右侧
@@ -53,14 +55,14 @@ export default defineThemeConfig({
   // },
 
   locales: {
-    '/': {
+    "/": {
       /**
        * @see https://theme-plume.vuejs.press/config/basic/#profile
        */
       profile: {
-        avatar: 'https://theme-plume.vuejs.press/plume.png',
-        name: 'Danny Wang的博客',
-        description: 'Danny Wang的博客',
+        avatar: "https://theme-plume.vuejs.press/plume.png",
+        name: "Danny Wang的博客",
+        description: "Danny Wang的博客",
         // circle: true,
         // location: '',
         // organization: '',
@@ -73,21 +75,21 @@ export default defineThemeConfig({
        * 公告板
        * @see https://theme-plume.vuejs.press/guide/features/bulletin/
        */
-       // bulletin: {
-       //   layout: 'top-right',
-       //   contentType: 'markdown',
-       //   title: '',
-       //   content: '',
-       // },
+      // bulletin: {
+      //   layout: 'bottom-right',
+      //   contentType: 'markdown',
+      //   title: '',
+      //   content: '',
+      // },
     },
-    '/en/': {
+    "/en/": {
       /**
        * @see https://theme-plume.vuejs.press/config/basic/#profile
        */
       profile: {
-        avatar: 'https://theme-plume.vuejs.press/plume.png',
-        name: 'Danny Wang的博客',
-        description: 'Danny Wang的博客',
+        avatar: "https://theme-plume.vuejs.press/plume.png",
+        name: "Danny Wang's' blog",
+        description: "Danny Wang's blog",
         // circle: true,
         // location: '',
         // organization: '',
@@ -100,12 +102,12 @@ export default defineThemeConfig({
        * 公告板
        * @see https://theme-plume.vuejs.press/guide/features/bulletin/
        */
-       // bulletin: {
-       //   layout: 'top-right',
-       //   contentType: 'markdown',
-       //   title: '',
-       //   content: '',
-       // },
+      // bulletin: {
+      //   layout: 'top-right',
+      //   contentType: 'markdown',
+      //   title: '',
+      //   content: '',
+      // },
     },
   },
-})
+});

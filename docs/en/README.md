@@ -7,9 +7,9 @@ config:
     full: true
     background: tint-plate
     hero:
-      name: Theme Plume
-      tagline: VuePress Next Theme
-      text: A simple, feature-rich, document & blog
+      name: Danny Wang's blog
+      tagline: Learning notes & thoughts
+      text: I pick fenceside asters at will; Carefree I see the southern hill.
       actions:
         -
           theme: brand
