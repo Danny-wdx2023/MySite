@@ -14,7 +14,18 @@ export const zhNavbar = defineNavbarConfig([
   {
     text: "笔记",
     icon: "mdi:notebook",
-    items: [{ text: "AI", link: "/notes/ai/README.md", icon: "ix:ai" }],
+    items: [
+      {
+        text: "算法",
+        link: "/notes/algo/README.md",
+        icon: "ant-design:function-outlined",
+      },
+      {
+        text: "数学",
+        link: "/notes/maths/README.md",
+        icon: "ant-design:function-outlined",
+      },
+    ],
   },
   {
     text: "更多",
@@ -25,7 +36,11 @@ export const zhNavbar = defineNavbarConfig([
         link: "mailto:Danny_wdx2023@aliyun.com",
         icon: "grommet-icons:contact",
       },
-      { text: "请杯奶茶", link: "https://afdian.com/a/Danny_wdx2023", icon: "line-md:coffee-loop" },
+      {
+        text: "请杯奶茶",
+        link: "https://afdian.com/a/Danny_wdx2023",
+        icon: "line-md:coffee-loop",
+      },
     ],
   },
 ]);
@@ -46,7 +61,13 @@ export const enNavbar = defineNavbarConfig([
   {
     text: "Notes",
     icon: "mdi:notebook",
-    items: [{ text: "AI", link: "/en/notes/ai/README.md", icon: "ix:ai" }],
+    items: [
+      {
+        text: "Completing",
+        link: "/",
+        icon: "lucide:ellipsis",
+      },
+    ],
   },
   {
     text: "More",
@@ -57,7 +78,11 @@ export const enNavbar = defineNavbarConfig([
         link: "mailto:Danny_wdx2023@aliyun.com",
         icon: "grommet-icons:contact",
       },
-      { text: "Sponsor", link: "https://afdian.com/a/Danny_wdx2023", icon: "line-md:coffee-loop" },
+      {
+        text: "Sponsor",
+        link: "https://afdian.com/a/Danny_wdx2023",
+        icon: "line-md:coffee-loop",
+      },
     ],
   },
 ]);

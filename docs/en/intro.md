@@ -36,7 +36,6 @@ Hi, I am Danny.W. Nice to meet you. :eyes:
 <Icon name="skill-icons:arduino" size="2em" />
 
 ## Plan
-- [ ] Focus on the spread of knowledge in terms of AI & Robot
 - [ ] Focus on state-of-the-art tech
 - [ ] Sync the good articles in SegmentFault & Juejin
 

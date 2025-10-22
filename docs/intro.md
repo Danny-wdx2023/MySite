@@ -11,7 +11,7 @@ Hi 我是 Danny.W 很高兴认识你~ :eyes:
 ## Danny.W
 - 性别：男
 - 出生年份：2012年
-- 星座：摩座
+- 星座：摩羯座
 - 标签：<Badge text="技术迷" /><Badge text="英语达人" />
 :::
 
@@ -36,7 +36,6 @@ Hi 我是 Danny.W 很高兴认识你~ :eyes:
 <Icon name="skill-icons:arduino" size="2em" />
 
 ## 未来规划
-- [ ] 主力关注AI与机器人方面内容的传播
 - [ ] 关注前沿技术
 - [ ] 将优质文章在思否&掘金同步
 

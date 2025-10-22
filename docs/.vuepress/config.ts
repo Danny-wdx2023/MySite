@@ -204,7 +204,7 @@ export default defineUserConfig({
      */
     encrypt: {
       rules: {
-        "/ai": "nymcwddxzl" // 你又冒充伟大的先知了
+        // "/": "" // 你又冒充伟大的先知了
       }
     },
   }),
