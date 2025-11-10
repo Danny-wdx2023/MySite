@@ -20,6 +20,7 @@
     "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
     "docs:build": "vuepress build docs --clean-cache --clean-temp",
     "docs:preview": "http-server docs/.vuepress/dist",
+    "docs:deploy": "pnpm docs:build && pnpm dlx gh-pages -d docs/.vuepress/dist -r https://github.com/Danny-wdx2023/MySite.git -b gh-pages",
     "vp-update": "pnpm dlx vp-update"
   },
   "devDependencies": {
