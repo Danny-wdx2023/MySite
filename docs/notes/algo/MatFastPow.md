@@ -3,8 +3,8 @@ title: 矩阵快速幂
 createTime: 2025/11/08 11:45:33
 permalink: /algo/matfastpow/
 tags:
-    - 数学
-    - 递推
+  - 数学
+  - 递推
 ---
 
 # 矩阵快速幂
@@ -24,11 +24,19 @@ tags:
 以最经典的斐波那契数列为例，分析如下：
 
 1. $F_1=F_2=1, F_{n+2}=F_{n+1}+F_n (n \in \N^*)$
-2. **注意到** $F_n = \left[\begin{matrix}1&1\newline1&0\end{matrix} \right]^{n-1}$ （注意力惊人）
+2. **注意到** $F_n = {\left[\begin{matrix}1&1\newline1&0\end{matrix} \right]^{n-1}}_{11}$ （注意力惊人）
 3. 上手！
 
 :::details
-证明 $F_n = \left[\begin{matrix}1&1\newline1&0\end{matrix} \right]^{n-1}$
+证明 $F_n = {\left[\begin{matrix}1&1\newline1&0\end{matrix} \right]^{n-1}}_{11}$
+
+由于 $F_{n+2}=F_{n+1}+F_n \Rightarrow \left[\begin{matrix}F_{n+2}&F_{n+1}\newline F_{n+1}&F_n\end{matrix} \right] = \left[\begin{matrix}1&1\newline1&0\end{matrix} \right] \times \left[\begin{matrix}F_{n+1}&F_n\newline F_n&F_{n-1}\end{matrix} \right]$
+
+根据递推公式反推，可以得到 $F_0=0$（无实际意义，仅为方便推导）  
+使用累乘法代入：  
+
+由于 $\left[\begin{matrix}F_n&F_{n-1}\newline F_{n-1}&F_{n-2}\end{matrix} \right] = \left[\begin{matrix}1&1\newline1&0\end{matrix} \right]^{n-2} \times \left[\begin{matrix}F_2&F_1\newline F_1&F_0\end{matrix} \right] = \left[\begin{matrix}1&1\newline1&0\end{matrix} \right]^{n-2} \times \left[\begin{matrix}1&1\newline1&0\end{matrix} \right]$
+
 :::
 
 ## 例题代码
@@ -72,7 +80,7 @@ ll fastpow(int power) {
 :::
 
 :::info
-其实抛开 python 的一堆劣势不谈 ~~（抛开事实不谈）~~，python (借助于numpy) 要实现该逻辑极为简单
+其实抛开 python 的一堆劣势不谈 ~~（抛开事实不谈）~~，python (借助于 numpy) 要实现该逻辑极为简单
 
 ```python
 import numpy as np
@@ -85,9 +93,10 @@ def fastpow(power: int) -> int:
         power >>= 1
     return res[0,0]
 ```
+
 其中这个神奇的 `@` 运算符，正是矩阵快速幂的核心——**矩阵乘法**！  
-另外说一声，`dtype=object`十分重要，它利用了python内置的int精度无限特性，but 速度稍慢。  
-若改为`dtype=int`/ `dtype=np.int64`（默认），则会像C++中的long long一样溢出，but 速度快。  
+另外说一声，`dtype=object`十分重要，它利用了 python 内置的 int 精度无限特性，but 速度稍慢。  
+若改为`dtype=int`/ `dtype=np.int64`（默认），则会像 C++中的 long long 一样溢出，but 速度快。  
 鱼与熊掌不可得兼！
 :::
 
