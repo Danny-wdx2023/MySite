@@ -18,12 +18,17 @@ export const zhNavbar = defineNavbarConfig([
       {
         text: "算法",
         link: "/notes/algo/README.md",
-        icon: "ant-design:function-outlined",
+        icon: "mdi:terminal-line",
       },
       {
         text: "数学",
         link: "/notes/maths/README.md",
         icon: "ant-design:function-outlined",
+      },
+      {
+        text: "小工具",
+        link: "/notes/tools/README.md",
+        icon: "heroicons:wrench-screwdriver",
       },
     ],
   },
