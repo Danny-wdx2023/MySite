@@ -34,7 +34,7 @@ tags:
 
 ## 模板代码
 
-```cpp
+```cpp :collapsed-lines
 #include <bits/stdc++.h>
 using namespace std;
 
